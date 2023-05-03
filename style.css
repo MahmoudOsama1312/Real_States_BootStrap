@@ -1,0 +1,95 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.navbar{
+    background-color: rgb(240, 240, 240);
+}
+
+body {
+    background-color: #f1fbff;
+}
+.section-padding{
+    padding: 100px 0;
+}
+
+/*--------------- carousel------------------- */
+.carousel-item{
+    min-height: 300px;
+}
+.carousel-caption{
+    z-index: 2;
+}
+.carousel-caption h5{
+    font-size: 35px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.carousel-caption p{
+    font-size: 15px;
+    line-height: 1.8;
+}
+.carousel-inner::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background: rgba(0,0,0,.5);
+}
+.w-100{          /*Importaaaaaaaaant for Mobile view  */
+    height: 100vh;
+}
+
+/* ----Responsive----- */
+@media only screen and (min-width:768px) and (max-width:991px){
+    .carousel-caption{
+        bottom: 300px;
+    }
+    .carousel-caption p{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width :767px){
+    .navbar-nav {
+        text-align: center;
+    }
+    .carousel-caption{
+        bottom: 300px;
+    }
+    .carousel-caption h5{
+        font-size: 13px;
+    }
+    .carousel-caption p{
+        padding: 10px 15px;
+        font-size: 8px;
+    }
+}
+/* ------------------------About Section ---------------------------*/
+
+/* ------------------------Buildlings Section ---------------------------*/
+
+.card{
+    box-shadow: ;
+}
+.img-container{            /*Lazem Kol Image a3mlha image Container 3lshan a3ml a3ml scale gwa el container */
+    overflow: hidden;
+}
+
+.img-container img{
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+    object-fit: cover;
+}
+.card img:hover{
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
